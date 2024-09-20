@@ -1,0 +1,152 @@
+/ecommerce-website
+│
+├── /public                # Publicly accessible files (mainly frontend)
+│   ├── /assets            # Frontend assets (CSS, JS, images, fonts)
+│   │   ├── /css           # CSS files (styles.css, etc.)
+│   │   ├── /js            # JavaScript files (app.js, cart.js, etc.)
+│   │   ├── /images        # Images for the site (product images, banners)
+│   │   └── /fonts         # Custom fonts if any
+│   ├── index.php          # Homepage (uses frontend template)
+│   ├── products.php       # Page listing products (uses frontend template)
+│   ├── product.php        # Single product page (uses frontend template)
+│   ├── cart.php           # Shopping cart page (uses frontend template)
+│   ├── checkout.php       # Checkout page (uses frontend template)
+│   └── login.php          # Login page (uses frontend template)
+│
+├── /admin                 # Admin panel (uses backend admin template)
+│   ├── /assets            # Admin panel assets (CSS, JS)
+│   ├── dashboard.php      # Admin dashboard (uses backend admin template)
+│   ├── products.php       # Admin product management
+│   ├── orders.php         # Admin order management
+│   └── users.php          # Admin user management
+│
+├── /seller                # Seller panel (uses backend seller template)
+│   ├── /assets            # Seller assets (CSS, JS)
+│   ├── dashboard.php      # Seller dashboard
+│   ├── products.php       # Seller product management
+│   ├── orders.php         # Seller order management
+│   └── account.php        # Seller account settings
+│
+├── /user                  # User dashboard (uses backend user template)
+│   ├── /assets            # User assets (CSS, JS)
+│   ├── dashboard.php      # User dashboard
+│   ├── orders.php         # User order history
+│   ├── profile.php        # User profile settings
+│   └── wishlist.php       # User wishlist page
+│
+├── /includes              # PHP includes (common scripts, configs)
+│   ├── /db                # Database connection and related files
+│   │   └── connection.php # DB connection script
+│   ├── header.php         # Common header for frontend
+│   ├── footer.php         # Common footer for frontend
+│   └── functions.php      # Reusable PHP functions (e.g., cart handling)
+│
+├── /models                # Database models
+│   ├── Product.php        # Product model for database operations
+│   ├── User.php           # User model
+│   ├── Order.php          # Order model
+│   └── Cart.php           # Cart model
+│
+├── /controllers           # Logic for handling requests and responses
+│   ├── ProductController.php  # Product-related logic
+│   ├── UserController.php     # User-related logic
+│   ├── OrderController.php    # Order-related logic
+│   └── CartController.php     # Cart-related logic
+│
+├── /uploads               # Folder for uploading images or other media
+│   └── /products          # Images for products
+│
+├── /config                # Configuration files
+│   ├── config.php         # Main configuration file
+│   ├── db_config.php      # Database configuration
+│   └── constants.php      # Common constants
+│
+├── /logs                  # Application logs
+│   └── error.log          # Error log file
+│
+├── .gitignore             # Git ignore file
+├── README.md              # Project documentation
+└── composer.json          # PHP dependencies (if using Composer)
+
+
+
+
+
+#retouch design
+
+/ecommerce-website
+│
+├── /public                    # Publicly accessible files (frontend templates and assets)
+│   ├── /assets                # Frontend assets (CSS, JS, images, fonts)
+│   │   ├── /css               # CSS files (styles.css, etc.)
+│   │   ├── /js                # JavaScript files (app.js, cart.js, etc.)
+│   │   ├── /images            # Images for the site (product images, banners)
+│   │   └── /fonts             # Custom fonts if any
+│   ├── index.php              # Homepage (uses frontend template)
+│   ├── products.php           # Page listing products
+│   ├── product.php            # Single product page
+│   ├── cart.php               # Shopping cart page
+│   ├── checkout.php           # Checkout page
+│   └── login.php              # Login page
+│
+├── /admin                     # Admin panel (backend admin template and assets)
+│   ├── /assets                # Admin panel assets (CSS, JS)
+│   ├── dashboard.php          # Admin dashboard page
+│   ├── products.php           # Admin product management
+│   ├── orders.php             # Admin order management
+│   ├── users.php              # Admin user management
+│   └── login.php              # Admin login page
+│
+├── /seller                    # Seller panel (backend seller template and assets)
+│   ├── /assets                # Seller panel assets (CSS, JS)
+│   ├── dashboard.php          # Seller dashboard page
+│   ├── products.php           # Seller product management
+│   ├── orders.php             # Seller order management
+│   └── account.php            # Seller account settings
+│
+├── /user                      # User panel (backend user template and assets)
+│   ├── /assets                # User panel assets (CSS, JS)
+│   ├── dashboard.php          # User dashboard page
+│   ├── orders.php             # User order history
+│   ├── profile.php            # User profile settings
+│   └── wishlist.php           # User wishlist page
+│
+├── /includes                  # Common PHP files (headers, footers, DB connection)
+│   ├── /db                    # Database connection and related files
+│   │   └── connection.php     # DB connection script
+│   ├── header.php             # Common header for frontend
+│   ├── footer.php             # Common footer for frontend
+│   ├── admin_header.php       # Header for the admin panel
+│   ├── admin_footer.php       # Footer for the admin panel
+│   ├── seller_header.php      # Header for the seller panel
+│   ├── seller_footer.php      # Footer for the seller panel
+│   ├── user_header.php        # Header for the user dashboard
+│   ├── user_footer.php        # Footer for the user dashboard
+│   └── functions.php          # Reusable PHP functions (e.g., cart handling)
+│
+├── /models                    # Database models for handling data logic
+│   ├── Product.php            # Product model for database operations
+│   ├── User.php               # User model
+│   ├── Order.php              # Order model
+│   └── Cart.php               # Cart model
+│
+├── /controllers               # PHP controllers for handling requests and responses
+│   ├── ProductController.php  # Logic for product-related actions
+│   ├── UserController.php     # Logic for user-related actions
+│   ├── OrderController.php    # Logic for order-related actions
+│   └── CartController.php     # Logic for cart-related actions
+│
+├── /uploads                   # Folder for uploading images or other media
+│   └── /products              # Product images
+│
+├── /config                    # Configuration files
+│   ├── config.php             # Main configuration file (environment, settings)
+│   ├── db_config.php          # Database configuration
+│   └── constants.php          # Common constants for site-wide usage
+│
+├── /logs                      # Application logs
+│   └── error.log              # Error log file for debugging
+│
+├── .gitignore                 # Git ignore file (for excluding certain files from version control)
+├── README.md                  # Project documentation
+└── composer.json              # PHP dependencies (if using Composer)
